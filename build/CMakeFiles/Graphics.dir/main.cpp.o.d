@@ -1,5 +1,6 @@
 CMakeFiles/Graphics.dir/main.cpp.o: \
   /Users/nathancho/Projects/Graphics/main.cpp \
+  /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions/AppKit/AppKit.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Foundation/Foundation.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Foundation/NSArray.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Foundation/NSObject.hpp \
@@ -1012,6 +1013,15 @@ CMakeFiles/Graphics.dir/main.cpp.o: \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Foundation/NSSet.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Foundation/NSSharedPtr.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Foundation/NSURL.hpp \
+  /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions/AppKit/AppKitPrivate.hpp \
+  /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions/AppKit/NSApplication.hpp \
+  /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions/AppKit/NSRunningApplication.hpp \
+  /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions/AppKit/NSWindow.hpp \
+  /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions/AppKit/NSView.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBase.h \
+  /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions/AppKit/NSMenu.hpp \
+  /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions/AppKit/NSMenuItem.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/Metal.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/MTLAccelerationStructure.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/MTLDefines.hpp \
@@ -1172,6 +1182,9 @@ CMakeFiles/Graphics.dir/main.cpp.o: \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/MTLVertexDescriptor.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/MTLVisibleFunctionTable.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/MTLVersion.hpp \
+  /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions/MetalKit/MetalKit.hpp \
+  /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions/MetalKit/MTKView.hpp \
+  /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions/MetalKit/MetalKitPrivate.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/QuartzCore/QuartzCore.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/QuartzCore/CAMetalDrawable.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/QuartzCore/../Metal/MTLDrawable.hpp \
@@ -1181,9 +1194,5 @@ CMakeFiles/Graphics.dir/main.cpp.o: \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/QuartzCore/CAPrivate.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/QuartzCore/CAMetalLayer.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/QuartzCore/../Metal/MTLPixelFormat.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBase.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bitset
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorSpace.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDataProvider.h
