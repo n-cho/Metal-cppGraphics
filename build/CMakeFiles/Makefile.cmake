@@ -11,6 +11,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.25.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeSystem.cmake"
+  "/Users/nathancho/Projects/Graphics/metal-cmake/CMakeLists.txt"
   "/opt/homebrew/Cellar/cmake/3.25.1/share/cmake/Modules/CMakeCCompiler.cmake.in"
   "/opt/homebrew/Cellar/cmake/3.25.1/share/cmake/Modules/CMakeCCompilerABI.c"
   "/opt/homebrew/Cellar/cmake/3.25.1/share/cmake/Modules/CMakeCInformation.cmake"
@@ -122,9 +123,11 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/3.25.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "metal-cmake/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/Graphics.dir/DependInfo.cmake"
+  "metal-cmake/CMakeFiles/Metal-cpp.dir/DependInfo.cmake"
   )

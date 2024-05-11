@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathancho/Projects/Graphics/build/CMakeFiles /Users/nathancho/Projects/Graphics/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/nathancho/Projects/Graphics/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/nathancho/Projects/Graphics/build/CMakeFiles /Users/nathancho/Projects/Graphics/build/metal-cmake//CMakeFiles/progress.marks
+	cd /Users/nathancho/Projects/Graphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 metal-cmake/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathancho/Projects/Graphics/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/nathancho/Projects/Graphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 metal-cmake/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,68 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/nathancho/Projects/Graphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 metal-cmake/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/nathancho/Projects/Graphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 metal-cmake/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/nathancho/Projects/Graphics/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named Graphics
+# Convenience name for target.
+metal-cmake/CMakeFiles/Metal-cpp.dir/rule:
+	cd /Users/nathancho/Projects/Graphics/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 metal-cmake/CMakeFiles/Metal-cpp.dir/rule
+.PHONY : metal-cmake/CMakeFiles/Metal-cpp.dir/rule
 
-# Build rule for target.
-Graphics: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Graphics
-.PHONY : Graphics
-
-# fast build rule for target.
-Graphics/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/build
-.PHONY : Graphics/fast
-
-#=============================================================================
-# Target rules for targets named Metal-cpp
-
-# Build rule for target.
-Metal-cpp: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Metal-cpp
+# Convenience name for target.
+Metal-cpp: metal-cmake/CMakeFiles/Metal-cpp.dir/rule
 .PHONY : Metal-cpp
 
 # fast build rule for target.
 Metal-cpp/fast:
-	$(MAKE) $(MAKESILENT) -f metal-cmake/CMakeFiles/Metal-cpp.dir/build.make metal-cmake/CMakeFiles/Metal-cpp.dir/build
+	cd /Users/nathancho/Projects/Graphics/build && $(MAKE) $(MAKESILENT) -f metal-cmake/CMakeFiles/Metal-cpp.dir/build.make metal-cmake/CMakeFiles/Metal-cpp.dir/build
 .PHONY : Metal-cpp/fast
 
-main.o: main.cpp.o
-.PHONY : main.o
+source.o: source.cpp.o
+.PHONY : source.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/main.cpp.o
-.PHONY : main.cpp.o
+source.cpp.o:
+	cd /Users/nathancho/Projects/Graphics/build && $(MAKE) $(MAKESILENT) -f metal-cmake/CMakeFiles/Metal-cpp.dir/build.make metal-cmake/CMakeFiles/Metal-cpp.dir/source.cpp.o
+.PHONY : source.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+source.i: source.cpp.i
+.PHONY : source.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/main.cpp.i
-.PHONY : main.cpp.i
+source.cpp.i:
+	cd /Users/nathancho/Projects/Graphics/build && $(MAKE) $(MAKESILENT) -f metal-cmake/CMakeFiles/Metal-cpp.dir/build.make metal-cmake/CMakeFiles/Metal-cpp.dir/source.cpp.i
+.PHONY : source.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+source.s: source.cpp.s
+.PHONY : source.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/main.cpp.s
-.PHONY : main.cpp.s
+source.cpp.s:
+	cd /Users/nathancho/Projects/Graphics/build && $(MAKE) $(MAKESILENT) -f metal-cmake/CMakeFiles/Metal-cpp.dir/build.make metal-cmake/CMakeFiles/Metal-cpp.dir/source.cpp.s
+.PHONY : source.cpp.s
 
 # Help Target
 help:
@@ -174,11 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... Graphics"
 	@echo "... Metal-cpp"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... source.o"
+	@echo "... source.i"
+	@echo "... source.s"
 .PHONY : help
 
 
@@ -190,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/nathancho/Projects/Graphics/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,3 +1,6 @@
 /Users/nathancho/Projects/Graphics/build/CMakeFiles/Graphics.dir
 /Users/nathancho/Projects/Graphics/build/CMakeFiles/edit_cache.dir
 /Users/nathancho/Projects/Graphics/build/CMakeFiles/rebuild_cache.dir
+/Users/nathancho/Projects/Graphics/build/metal-cmake/CMakeFiles/Metal-cpp.dir
+/Users/nathancho/Projects/Graphics/build/metal-cmake/CMakeFiles/edit_cache.dir
+/Users/nathancho/Projects/Graphics/build/metal-cmake/CMakeFiles/rebuild_cache.dir

@@ -8,12 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/nathancho/Projects/Graphics/main.cpp" "CMakeFiles/Graphics.dir/main.cpp.o" "gcc" "CMakeFiles/Graphics.dir/main.cpp.o.d"
+  "/Users/nathancho/Projects/Graphics/metal-cmake/source.cpp" "metal-cmake/CMakeFiles/Metal-cpp.dir/source.cpp.o" "gcc" "metal-cmake/CMakeFiles/Metal-cpp.dir/source.cpp.o.d"
   )
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/nathancho/Projects/Graphics/build/metal-cmake/CMakeFiles/Metal-cpp.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

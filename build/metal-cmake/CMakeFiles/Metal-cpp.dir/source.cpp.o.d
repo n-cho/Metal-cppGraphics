@@ -1,5 +1,5 @@
-CMakeFiles/Graphics.dir/main.cpp.o: \
-  /Users/nathancho/Projects/Graphics/main.cpp \
+metal-cmake/CMakeFiles/Metal-cpp.dir/source.cpp.o: \
+  /Users/nathancho/Projects/Graphics/metal-cmake/source.cpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Foundation/Foundation.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Foundation/NSArray.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Foundation/NSObject.hpp \
@@ -1018,6 +1018,7 @@ CMakeFiles/Graphics.dir/main.cpp.o: \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/../Foundation/NSDefines.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/MTLHeaderBridge.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/MTLPrivate.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/dlfcn.h \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/MTLAccelerationStructureTypes.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/MTLResource.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/Metal/MTLStageInputOutputDescriptor.hpp \
@@ -1182,8 +1183,4 @@ CMakeFiles/Graphics.dir/main.cpp.o: \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/QuartzCore/CAMetalLayer.hpp \
   /Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp/QuartzCore/../Metal/MTLPixelFormat.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBase.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/iostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/istream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ostream \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/bitset
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBase.h
