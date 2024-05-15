@@ -82,7 +82,7 @@ NS::Menu* MyAppDelegate::createMenuBar() {
     NS::MenuItem* pAppQuitItem =
         pAppMenu->addItem(quitItemName, quitCallback, NS::String::string("q", UTF8StringEncoding));
     pAppQuitItem->setKeyEquivalentModifierMask(NS::EventModifierFlagCommand);
-    pAppMenu->setSubmenu(pAppMenu);
+    pAppMenuItem->setSubmenu(pAppMenu);
 
     NS::MenuItem* pWindowMenuItem = NS::MenuItem::alloc()->init();
     NS::Menu* pWindowMenu = NS::Menu::alloc()->init(NS::String::string("Window", UTF8StringEncoding));

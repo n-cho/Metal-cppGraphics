@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/nathancho/Projects/Graphics/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp -I/Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -std=gnu++20 -o CMakeFiles/Graphics.dir/main.cpp.o -c /Users/nathancho/Projects/Graphics/main.cpp",
+  "file": "/Users/nathancho/Projects/Graphics/main.cpp"
+},
+{
+  "directory": "/Users/nathancho/Projects/Graphics/build/metal-cmake",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp -I/Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -std=gnu++20 -o CMakeFiles/Metal-cpp.dir/source.cpp.o -c /Users/nathancho/Projects/Graphics/metal-cmake/source.cpp",
+  "file": "/Users/nathancho/Projects/Graphics/metal-cmake/source.cpp"
+}
+]
