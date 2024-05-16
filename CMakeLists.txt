@@ -4,5 +4,5 @@ project(Graphics)
 
 add_subdirectory(cmake-metal)
 
-add_executable(Graphics main.cpp)
+add_executable(Graphics src/main.cpp)
 target_link_libraries(Graphics Metal-cpp)

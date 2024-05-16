@@ -69,28 +69,28 @@ include CMakeFiles/Graphics.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Graphics.dir/flags.make
 
-CMakeFiles/Graphics.dir/main.cpp.o: CMakeFiles/Graphics.dir/flags.make
-CMakeFiles/Graphics.dir/main.cpp.o: /Users/nathancho/Projects/Graphics/main.cpp
-CMakeFiles/Graphics.dir/main.cpp.o: CMakeFiles/Graphics.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathancho/Projects/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Graphics.dir/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Graphics.dir/main.cpp.o -MF CMakeFiles/Graphics.dir/main.cpp.o.d -o CMakeFiles/Graphics.dir/main.cpp.o -c /Users/nathancho/Projects/Graphics/main.cpp
+CMakeFiles/Graphics.dir/src/main.cpp.o: CMakeFiles/Graphics.dir/flags.make
+CMakeFiles/Graphics.dir/src/main.cpp.o: /Users/nathancho/Projects/Graphics/src/main.cpp
+CMakeFiles/Graphics.dir/src/main.cpp.o: CMakeFiles/Graphics.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathancho/Projects/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Graphics.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Graphics.dir/src/main.cpp.o -MF CMakeFiles/Graphics.dir/src/main.cpp.o.d -o CMakeFiles/Graphics.dir/src/main.cpp.o -c /Users/nathancho/Projects/Graphics/src/main.cpp
 
-CMakeFiles/Graphics.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Graphics.dir/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nathancho/Projects/Graphics/main.cpp > CMakeFiles/Graphics.dir/main.cpp.i
+CMakeFiles/Graphics.dir/src/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Graphics.dir/src/main.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nathancho/Projects/Graphics/src/main.cpp > CMakeFiles/Graphics.dir/src/main.cpp.i
 
-CMakeFiles/Graphics.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Graphics.dir/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathancho/Projects/Graphics/main.cpp -o CMakeFiles/Graphics.dir/main.cpp.s
+CMakeFiles/Graphics.dir/src/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Graphics.dir/src/main.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathancho/Projects/Graphics/src/main.cpp -o CMakeFiles/Graphics.dir/src/main.cpp.s
 
 # Object files for target Graphics
 Graphics_OBJECTS = \
-"CMakeFiles/Graphics.dir/main.cpp.o"
+"CMakeFiles/Graphics.dir/src/main.cpp.o"
 
 # External object files for target Graphics
 Graphics_EXTERNAL_OBJECTS =
 
-Graphics: CMakeFiles/Graphics.dir/main.cpp.o
+Graphics: CMakeFiles/Graphics.dir/src/main.cpp.o
 Graphics: CMakeFiles/Graphics.dir/build.make
 Graphics: cmake-metal/libMetal-cpp.a
 Graphics: CMakeFiles/Graphics.dir/link.txt
