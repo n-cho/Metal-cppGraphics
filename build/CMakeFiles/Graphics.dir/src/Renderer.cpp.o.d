@@ -1,11 +1,12 @@
-CMakeFiles/Graphics.dir/src/main.cpp.o: \
-  /Users/nathancho/Projects/Graphics/src/main.cpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/AppKit.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/Foundation.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSArray.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSObject.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSDefines.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSPrivate.hpp \
+CMakeFiles/Graphics.dir/src/Renderer.cpp.o: \
+  /Users/nathancho/Projects/Graphics/src/Renderer.cpp \
+  /Users/nathancho/Projects/Graphics/include/Renderer.h \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/Metal.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLAccelerationStructure.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLDefines.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSDefines.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLHeaderBridge.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLPrivate.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/objc/runtime.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/objc/objc.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdlib.h \
@@ -129,7 +130,11 @@ CMakeFiles/Graphics.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/stdbool.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdbool.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/15.0.0/include/stdarg.h \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSTypes.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/Foundation.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSArray.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSObject.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSPrivate.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSTypes.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/ctype.h \
@@ -412,14 +417,14 @@ CMakeFiles/Graphics.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLNode.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/objc/message.h \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSAutoreleasePool.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSBundle.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSNotification.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSDictionary.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSEnumerator.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSString.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSObjCRuntime.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSRange.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSAutoreleasePool.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSBundle.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSNotification.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSDictionary.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSEnumerator.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSString.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSObjCRuntime.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSRange.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/functional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/search.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -1004,34 +1009,18 @@ CMakeFiles/Graphics.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSData.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSDate.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSError.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSLock.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSNumber.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSProcessInfo.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSSet.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSSharedPtr.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSURL.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/AppKitPrivate.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSApplication.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSRunningApplication.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSWindow.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSView.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBase.h \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSMenu.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSMenuItem.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/Metal.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLAccelerationStructure.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLDefines.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSDefines.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLHeaderBridge.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLPrivate.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSData.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSDate.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSError.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSLock.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSNumber.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSProcessInfo.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSSet.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSSharedPtr.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSURL.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLAccelerationStructureTypes.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLResource.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLStageInputOutputDescriptor.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSRange.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLTypes.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLAccelerationStructureCommandEncoder.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLArgument.hpp \
@@ -1142,8 +1131,6 @@ CMakeFiles/Graphics.dir/src/main.cpp.o: \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLBuffer.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLCaptureManager.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLCaptureScope.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSObject.hpp \
-  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/../Foundation/NSString.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLCommandBuffer.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLCommandQueue.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Metal/MTLComputeCommandEncoder.hpp \
@@ -1185,6 +1172,18 @@ CMakeFiles/Graphics.dir/src/main.cpp.o: \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/MetalKit/MetalKit.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/MetalKit/MTKView.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/MetalKit/MetalKitPrivate.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/AppKit.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/AppKitPrivate.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSApplication.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSRunningApplication.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSObject.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSPrivate.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSWindow.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSView.hpp \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGBase.h \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSMenu.hpp \
+  /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/NSMenuItem.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/QuartzCore/QuartzCore.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/QuartzCore/CAMetalDrawable.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/QuartzCore/../Metal/MTLDrawable.hpp \
@@ -1195,5 +1194,4 @@ CMakeFiles/Graphics.dir/src/main.cpp.o: \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/QuartzCore/CAMetalLayer.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/QuartzCore/../Metal/MTLPixelFormat.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorSpace.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDataProvider.h \
-  /Users/nathancho/Projects/Graphics/include/Renderer.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDataProvider.h

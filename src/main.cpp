@@ -1,23 +1,10 @@
-#include <CoreFoundation/CFCGTypes.h>
-#include <objc/objc.h>
-
 #include <AppKit/AppKit.hpp>
 #include <Foundation/Foundation.hpp>
 #include <Metal/Metal.hpp>
 #include <MetalKit/MetalKit.hpp>
 #include <QuartzCore/QuartzCore.hpp>
 
-class Renderer {
-    public:
-        Renderer(MTL::Device* pDevice);
-        ~Renderer();
-
-        void draw(MTK::View* pView);
-
-    private:
-        MTL::Device* _pDevice;
-        MTL::CommandQueue* _pCommandQueue;
-};
+#include "Renderer.h"
 
 class MyMTKViewDelegate : public MTK::ViewDelegate {
     public:
@@ -151,23 +138,3 @@ MyMTKViewDelegate::MyMTKViewDelegate(MTL::Device* pDevice) : MTK::ViewDelegate()
 MyMTKViewDelegate::~MyMTKViewDelegate() { delete _pRenderer; }
 
 void MyMTKViewDelegate::drawInMTKView(MTK::View* pView) { _pRenderer->draw(pView); }
-
-Renderer::Renderer(MTL::Device* pDevice) : _pDevice(pDevice->retain()) { _pCommandQueue = _pDevice->newCommandQueue(); }
-
-Renderer::~Renderer() {
-    _pCommandQueue->release();
-    _pDevice->release();
-}
-
-void Renderer::draw(MTK::View* pView) {
-    NS::AutoreleasePool* pPool = NS::AutoreleasePool::alloc()->init();
-
-    MTL::CommandBuffer* pCmd = _pCommandQueue->commandBuffer();
-    MTL::RenderPassDescriptor* pRpd = pView->currentRenderPassDescriptor();
-    MTL::RenderCommandEncoder* pEnc = pCmd->renderCommandEncoder(pRpd);
-    pEnc->endEncoding();
-    pCmd->presentDrawable(pView->currentDrawable());
-    pCmd->commit();
-
-    pPool->release();
-}

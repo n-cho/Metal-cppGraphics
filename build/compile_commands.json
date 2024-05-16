@@ -1,8 +1,13 @@
 [
 {
   "directory": "/Users/nathancho/Projects/Graphics/build",
-  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp -I/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -std=gnu++20 -o CMakeFiles/Graphics.dir/src/main.cpp.o -c /Users/nathancho/Projects/Graphics/src/main.cpp",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/nathancho/Projects/Graphics/include -I/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp -I/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -std=gnu++20 -o CMakeFiles/Graphics.dir/src/main.cpp.o -c /Users/nathancho/Projects/Graphics/src/main.cpp",
   "file": "/Users/nathancho/Projects/Graphics/src/main.cpp"
+},
+{
+  "directory": "/Users/nathancho/Projects/Graphics/build",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++  -I/Users/nathancho/Projects/Graphics/include -I/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp -I/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -std=gnu++20 -o CMakeFiles/Graphics.dir/src/Renderer.cpp.o -c /Users/nathancho/Projects/Graphics/src/Renderer.cpp",
+  "file": "/Users/nathancho/Projects/Graphics/src/Renderer.cpp"
 },
 {
   "directory": "/Users/nathancho/Projects/Graphics/build/cmake-metal",

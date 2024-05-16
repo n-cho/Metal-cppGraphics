@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp -I/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions
+CXX_INCLUDES = -I/Users/nathancho/Projects/Graphics/include -I/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp -I/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions
 
 CXX_FLAGSarm64 =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk -std=gnu++20
 

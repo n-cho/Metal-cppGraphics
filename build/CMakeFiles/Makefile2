@@ -98,12 +98,12 @@ cmake-metal/clean: cmake-metal/CMakeFiles/Metal-cpp.dir/clean
 CMakeFiles/Graphics.dir/all: cmake-metal/CMakeFiles/Metal-cpp.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathancho/Projects/Graphics/build/CMakeFiles --progress-num=1,2 "Built target Graphics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathancho/Projects/Graphics/build/CMakeFiles --progress-num=1,2,3 "Built target Graphics"
 .PHONY : CMakeFiles/Graphics.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Graphics.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathancho/Projects/Graphics/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathancho/Projects/Graphics/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Graphics.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/nathancho/Projects/Graphics/build/CMakeFiles 0
 .PHONY : CMakeFiles/Graphics.dir/rule
@@ -124,7 +124,7 @@ CMakeFiles/Graphics.dir/clean:
 cmake-metal/CMakeFiles/Metal-cpp.dir/all:
 	$(MAKE) $(MAKESILENT) -f cmake-metal/CMakeFiles/Metal-cpp.dir/build.make cmake-metal/CMakeFiles/Metal-cpp.dir/depend
 	$(MAKE) $(MAKESILENT) -f cmake-metal/CMakeFiles/Metal-cpp.dir/build.make cmake-metal/CMakeFiles/Metal-cpp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathancho/Projects/Graphics/build/CMakeFiles --progress-num=3,4 "Built target Metal-cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/nathancho/Projects/Graphics/build/CMakeFiles --progress-num=4,5 "Built target Metal-cpp"
 .PHONY : cmake-metal/CMakeFiles/Metal-cpp.dir/all
 
 # Build rule for subdir invocation for target.
