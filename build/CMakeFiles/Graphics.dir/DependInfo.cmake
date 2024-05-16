@@ -8,6 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/nathancho/Projects/Graphics/src/AppDelegate.cpp" "CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o" "gcc" "CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o.d"
+  "/Users/nathancho/Projects/Graphics/src/MTKViewDelegate.cpp" "CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o" "gcc" "CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o.d"
   "/Users/nathancho/Projects/Graphics/src/Renderer.cpp" "CMakeFiles/Graphics.dir/src/Renderer.cpp.o" "gcc" "CMakeFiles/Graphics.dir/src/Renderer.cpp.o.d"
   "/Users/nathancho/Projects/Graphics/src/main.cpp" "CMakeFiles/Graphics.dir/src/main.cpp.o" "gcc" "CMakeFiles/Graphics.dir/src/main.cpp.o.d"
   )

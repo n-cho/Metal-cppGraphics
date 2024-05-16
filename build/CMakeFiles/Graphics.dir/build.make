@@ -97,20 +97,52 @@ CMakeFiles/Graphics.dir/src/Renderer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Graphics.dir/src/Renderer.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathancho/Projects/Graphics/src/Renderer.cpp -o CMakeFiles/Graphics.dir/src/Renderer.cpp.s
 
+CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o: CMakeFiles/Graphics.dir/flags.make
+CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o: /Users/nathancho/Projects/Graphics/src/AppDelegate.cpp
+CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o: CMakeFiles/Graphics.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathancho/Projects/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o -MF CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o.d -o CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o -c /Users/nathancho/Projects/Graphics/src/AppDelegate.cpp
+
+CMakeFiles/Graphics.dir/src/AppDelegate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Graphics.dir/src/AppDelegate.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nathancho/Projects/Graphics/src/AppDelegate.cpp > CMakeFiles/Graphics.dir/src/AppDelegate.cpp.i
+
+CMakeFiles/Graphics.dir/src/AppDelegate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Graphics.dir/src/AppDelegate.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathancho/Projects/Graphics/src/AppDelegate.cpp -o CMakeFiles/Graphics.dir/src/AppDelegate.cpp.s
+
+CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o: CMakeFiles/Graphics.dir/flags.make
+CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o: /Users/nathancho/Projects/Graphics/src/MTKViewDelegate.cpp
+CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o: CMakeFiles/Graphics.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/nathancho/Projects/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o -MF CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o.d -o CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o -c /Users/nathancho/Projects/Graphics/src/MTKViewDelegate.cpp
+
+CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/nathancho/Projects/Graphics/src/MTKViewDelegate.cpp > CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.i
+
+CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/nathancho/Projects/Graphics/src/MTKViewDelegate.cpp -o CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.s
+
 # Object files for target Graphics
 Graphics_OBJECTS = \
 "CMakeFiles/Graphics.dir/src/main.cpp.o" \
-"CMakeFiles/Graphics.dir/src/Renderer.cpp.o"
+"CMakeFiles/Graphics.dir/src/Renderer.cpp.o" \
+"CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o" \
+"CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o"
 
 # External object files for target Graphics
 Graphics_EXTERNAL_OBJECTS =
 
 Graphics: CMakeFiles/Graphics.dir/src/main.cpp.o
 Graphics: CMakeFiles/Graphics.dir/src/Renderer.cpp.o
+Graphics: CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o
+Graphics: CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o
 Graphics: CMakeFiles/Graphics.dir/build.make
 Graphics: cmake-metal/libMetal-cpp.a
 Graphics: CMakeFiles/Graphics.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nathancho/Projects/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Graphics"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nathancho/Projects/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable Graphics"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Graphics.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

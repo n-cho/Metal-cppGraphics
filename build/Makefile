@@ -142,6 +142,54 @@ Metal-cpp/fast:
 	$(MAKE) $(MAKESILENT) -f cmake-metal/CMakeFiles/Metal-cpp.dir/build.make cmake-metal/CMakeFiles/Metal-cpp.dir/build
 .PHONY : Metal-cpp/fast
 
+src/AppDelegate.o: src/AppDelegate.cpp.o
+.PHONY : src/AppDelegate.o
+
+# target to build an object file
+src/AppDelegate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/src/AppDelegate.cpp.o
+.PHONY : src/AppDelegate.cpp.o
+
+src/AppDelegate.i: src/AppDelegate.cpp.i
+.PHONY : src/AppDelegate.i
+
+# target to preprocess a source file
+src/AppDelegate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/src/AppDelegate.cpp.i
+.PHONY : src/AppDelegate.cpp.i
+
+src/AppDelegate.s: src/AppDelegate.cpp.s
+.PHONY : src/AppDelegate.s
+
+# target to generate assembly for a file
+src/AppDelegate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/src/AppDelegate.cpp.s
+.PHONY : src/AppDelegate.cpp.s
+
+src/MTKViewDelegate.o: src/MTKViewDelegate.cpp.o
+.PHONY : src/MTKViewDelegate.o
+
+# target to build an object file
+src/MTKViewDelegate.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o
+.PHONY : src/MTKViewDelegate.cpp.o
+
+src/MTKViewDelegate.i: src/MTKViewDelegate.cpp.i
+.PHONY : src/MTKViewDelegate.i
+
+# target to preprocess a source file
+src/MTKViewDelegate.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.i
+.PHONY : src/MTKViewDelegate.cpp.i
+
+src/MTKViewDelegate.s: src/MTKViewDelegate.cpp.s
+.PHONY : src/MTKViewDelegate.s
+
+# target to generate assembly for a file
+src/MTKViewDelegate.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Graphics.dir/build.make CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.s
+.PHONY : src/MTKViewDelegate.cpp.s
+
 src/Renderer.o: src/Renderer.cpp.o
 .PHONY : src/Renderer.o
 
@@ -200,6 +248,12 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... Graphics"
 	@echo "... Metal-cpp"
+	@echo "... src/AppDelegate.o"
+	@echo "... src/AppDelegate.i"
+	@echo "... src/AppDelegate.s"
+	@echo "... src/MTKViewDelegate.o"
+	@echo "... src/MTKViewDelegate.i"
+	@echo "... src/MTKViewDelegate.s"
 	@echo "... src/Renderer.o"
 	@echo "... src/Renderer.i"
 	@echo "... src/Renderer.s"

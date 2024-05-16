@@ -1,6 +1,6 @@
-CMakeFiles/Graphics.dir/src/Renderer.cpp.o: \
-  /Users/nathancho/Projects/Graphics/src/Renderer.cpp \
-  /Users/nathancho/Projects/Graphics/include/Renderer.h \
+CMakeFiles/Graphics.dir/src/MTKViewDelegate.cpp.o: \
+  /Users/nathancho/Projects/Graphics/src/MTKViewDelegate.cpp \
+  /Users/nathancho/Projects/Graphics/include/MTKViewDelegate.h \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions/AppKit/AppKit.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/Foundation.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/Foundation/NSArray.hpp \
@@ -1196,4 +1196,5 @@ CMakeFiles/Graphics.dir/src/Renderer.cpp.o: \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/QuartzCore/CAMetalLayer.hpp \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/QuartzCore/../Metal/MTLPixelFormat.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorSpace.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDataProvider.h
+  /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDataProvider.h \
+  /Users/nathancho/Projects/Graphics/include/Renderer.h

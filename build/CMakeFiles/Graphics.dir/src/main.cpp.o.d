@@ -1196,4 +1196,6 @@ CMakeFiles/Graphics.dir/src/main.cpp.o: \
   /Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp/QuartzCore/../Metal/MTLPixelFormat.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorSpace.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX14.4.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGDataProvider.h \
+  /Users/nathancho/Projects/Graphics/include/AppDelegate.h \
+  /Users/nathancho/Projects/Graphics/include/MTKViewDelegate.h \
   /Users/nathancho/Projects/Graphics/include/Renderer.h
