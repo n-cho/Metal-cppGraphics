@@ -92,7 +92,7 @@ Graphics_EXTERNAL_OBJECTS =
 
 Graphics: CMakeFiles/Graphics.dir/main.cpp.o
 Graphics: CMakeFiles/Graphics.dir/build.make
-Graphics: metal-cmake/libMetal-cpp.a
+Graphics: cmake-metal/libMetal-cpp.a
 Graphics: CMakeFiles/Graphics.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/nathancho/Projects/Graphics/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Graphics"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Graphics.dir/link.txt --verbose=$(VERBOSE)

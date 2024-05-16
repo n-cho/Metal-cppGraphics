@@ -16,7 +16,7 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"metal-cmake/CMakeLists.txt"
+			"cmake-metal/CMakeLists.txt"
 		],
 		"nodes" : 
 		[
@@ -62,11 +62,11 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp"
+					"path" : "/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/Users/nathancho/Projects/Graphics/metal-cmake/metal-cpp-extensions"
+					"path" : "/Users/nathancho/Projects/Graphics/cmake-metal/metal-cpp-extensions"
 				}
 			],
 			"language" : "CXX",
@@ -88,7 +88,7 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "Metal-cpp::@43ca618cd877bd5050bb"
+			"id" : "Metal-cpp::@b68a136108d44b3f7063"
 		}
 	],
 	"id" : "Graphics::@6890427a1f51a3e7e1df",
@@ -102,7 +102,7 @@
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "metal-cmake/libMetal-cpp.a",
+				"fragment" : "cmake-metal/libMetal-cpp.a",
 				"role" : "libraries"
 			},
 			{

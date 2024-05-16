@@ -8,7 +8,7 @@
 	"installers" : [],
 	"paths" : 
 	{
-		"build" : "metal-cmake",
-		"source" : "metal-cmake"
+		"build" : "cmake-metal",
+		"source" : "cmake-metal"
 	}
 }

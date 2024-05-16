@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libMetal-cpp.a "CMakeFiles/Metal-cpp.dir/source.cpp.o"
+/Library/Developer/CommandLineTools/usr/bin/ranlib libMetal-cpp.a

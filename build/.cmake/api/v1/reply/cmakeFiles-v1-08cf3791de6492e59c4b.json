@@ -147,7 +147,7 @@
 			"path" : "/opt/homebrew/Cellar/cmake/3.25.1/share/cmake/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
-			"path" : "metal-cmake/CMakeLists.txt"
+			"path" : "cmake-metal/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
