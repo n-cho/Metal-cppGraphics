@@ -12,4 +12,9 @@ set(SOURCES
 
 add_executable(Graphics ${SOURCES})
 target_link_libraries(Graphics Metal-cpp)
-target_include_directories(Graphics PRIVATE ${PROJECT_SOURCE_DIR}/include)
+
+set(DIRS
+    ${PROJECT_SOURCE_DIR}/include
+    ${PROJECT_SOURCE_DIR}/shaders)
+
+target_include_directories(Graphics PRIVATE ${DIRS})
