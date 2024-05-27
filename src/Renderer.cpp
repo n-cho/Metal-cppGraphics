@@ -74,15 +74,15 @@ void Renderer::buildBuffers() {
     const size_t NumVertices = 3;
 
     simd::float3 positions[NumVertices] = {
-        {-0.8f,  0.8f, 0.0f},
-        { 0.0f, -0.8f, 0.0f},
-        {+0.8f,  0.8f, 0.0f}
+        {-0.8f, -0.8f, 0.0f},
+        { 0.0f, +0.8f, 0.0f},
+        {+0.8f, -0.8f, 0.0f}
     };
 
     simd::float3 colors[NumVertices] = {
+        {0.0f, 0.0f, 1.0f},
         {1.0f, 0.0f, 0.0f},
-        {0.0f, 1.0f, 0.0f},
-        {0.0f, 0.0f, 1.0f}
+        {0.0f, 1.0f, 0.0f}
     };
 
     const size_t positionsDataSize = NumVertices * sizeof(simd::float3);
