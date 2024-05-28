@@ -22,7 +22,8 @@ class Renderer {
     private:
         MTL::Device* _pDevice;
         MTL::CommandQueue* _pCommandQueue;
-        MTL::RenderPipelineState* _pPSO;
+        MTL::RenderPipelineState* _pPSO;    // PSO -> PipelineStateObject
         MTL::Buffer* _pVertexPositionsBuffer;
         MTL::Buffer* _pVertexColorsBuffer;
+        MTL::Buffer* _pVertexIndicesBuffer;
 };
