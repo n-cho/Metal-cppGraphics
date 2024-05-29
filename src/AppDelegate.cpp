@@ -15,12 +15,14 @@ NS::Menu* AppDelegate::createMenuBar() {
     NS::Menu* pAppMenu = NS::Menu::alloc()->init(NS::String::string("Appname", UTF8StringEncoding));
 
     NS::String* appName = NS::RunningApplication::currentApplication()->localizedName();
-    NS::String* quitItemName = NS::String::string("Quit ", UTF8StringEncoding)->stringByAppendingString(appName);
+    NS::String* quitItemName =
+        NS::String::string("Quit ", UTF8StringEncoding)->stringByAppendingString(appName);
 
-    SEL quitCallback = NS::MenuItem::registerActionCallback("appQuit", [](void*, SEL, const NS::Object* pSender) {
-        auto pApp = NS::Application::sharedApplication();
-        pApp->terminate(pSender);
-    });
+    SEL quitCallback =
+        NS::MenuItem::registerActionCallback("appQuit", [](void*, SEL, const NS::Object* pSender) {
+            auto pApp = NS::Application::sharedApplication();
+            pApp->terminate(pSender);
+        });
 
     NS::MenuItem* pAppQuitItem =
         pAppMenu->addItem(quitItemName, quitCallback, NS::String::string("q", UTF8StringEncoding));
@@ -28,16 +30,17 @@ NS::Menu* AppDelegate::createMenuBar() {
     pAppMenuItem->setSubmenu(pAppMenu);
 
     NS::MenuItem* pWindowMenuItem = NS::MenuItem::alloc()->init();
-    NS::Menu* pWindowMenu = NS::Menu::alloc()->init(NS::String::string("Window", UTF8StringEncoding));
+    NS::Menu* pWindowMenu =
+        NS::Menu::alloc()->init(NS::String::string("Window", UTF8StringEncoding));
 
-    SEL closeWindowCallback = NS::MenuItem::registerActionCallback("windowClose", [](void*, SEL, const NS::Object*) {
-        auto pApp = NS::Application::sharedApplication();
-        pApp->windows()->object<NS::Window>(0)->close();
-    });
-    NS::MenuItem* pCloseWindowItem = pWindowMenu->addItem(
-        NS::String::string("Close Window", UTF8StringEncoding),
-        closeWindowCallback,
-        NS::String::string("w", UTF8StringEncoding));
+    SEL closeWindowCallback =
+        NS::MenuItem::registerActionCallback("windowClose", [](void*, SEL, const NS::Object*) {
+            auto pApp = NS::Application::sharedApplication();
+            pApp->windows()->object<NS::Window>(0)->close();
+        });
+    NS::MenuItem* pCloseWindowItem =
+        pWindowMenu->addItem(NS::String::string("Close Window", UTF8StringEncoding),
+                             closeWindowCallback, NS::String::string("w", UTF8StringEncoding));
     pCloseWindowItem->setKeyEquivalentModifierMask(NS::EventModifierFlagCommand);
 
     pWindowMenuItem->setSubmenu(pWindowMenu);
@@ -61,13 +64,11 @@ void AppDelegate::applicationWillFinishLaunching(NS::Notification* pNotification
 }
 
 void AppDelegate::applicationDidFinishLaunching(NS::Notification* pNotification) {
-    CGRect frame = (CGRect){
-        {100.0, 100.0},
-        {640.0, 640.0}
-    };
+    CGRect frame = (CGRect){{100.0, 100.0}, {640.0, 640.0}};
 
-    _pWindow = NS::Window::alloc()->init(
-        frame, NS::WindowStyleMaskClosable | NS::WindowStyleMaskTitled, NS::BackingStoreBuffered, false);
+    _pWindow =
+        NS::Window::alloc()->init(frame, NS::WindowStyleMaskClosable | NS::WindowStyleMaskTitled,
+                                  NS::BackingStoreBuffered, false);
 
     _pDevice = MTL::CreateSystemDefaultDevice();
 
@@ -87,4 +88,6 @@ void AppDelegate::applicationDidFinishLaunching(NS::Notification* pNotification)
     pApp->activateIgnoringOtherApps(true);
 }
 
-bool AppDelegate::applicationShouldTerminateAfterLastWindowClosed(NS::Application* pSender) { return true; }
+bool AppDelegate::applicationShouldTerminateAfterLastWindowClosed(NS::Application* pSender) {
+    return true;
+}
