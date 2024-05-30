@@ -1,4 +1,5 @@
 .clang-format
 .cache
 .clangd
+build_and_run.sh
 build
