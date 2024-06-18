@@ -1,5 +1,6 @@
 .clang-format
 .cache
 .clangd
+.DS_Store
 build_and_run.sh
 build

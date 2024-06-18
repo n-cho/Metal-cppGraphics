@@ -17,7 +17,7 @@
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 //
-// AppKit/NSView.hpp
+// AppKit/AppKit.hpp
 //
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -25,21 +25,14 @@
 
 //-------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#include <Foundation/Foundation.hpp>
 #include "AppKitPrivate.hpp"
-#include <Foundation/NSObject.hpp>
-#include <CoreGraphics/CGGeometry.h>
+#include "NSApplication.hpp"
+#include "NSRunningApplication.hpp"
+#include "NSGridView.hpp"
+#include "NSStackView.hpp"
+#include "NSWindow.hpp"
+#include "NSMenu.hpp"
+#include "NSMenuItem.hpp"
 
-namespace NS
-{
-	class View : public NS::Referencing< View >
-	{
-		public:
-			View*		init( CGRect frame );
-	};
-}
-
-
-_NS_INLINE NS::View* NS::View::init( CGRect frame )
-{
-	return Object::sendMessage< View* >( _APPKIT_PRIVATE_CLS( NSView ), _APPKIT_PRIVATE_SEL( initWithFrame_ ), frame );
-}
+//-------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -65,6 +65,7 @@
 namespace MTK::Private::Class {
 
 _MTK_PRIVATE_DEF_CLS( MTKView );
+_MTK_PRIVATE_DEF_CLS( MTKTextureLoader );
 
 } // Class
 
@@ -73,8 +74,8 @@ _MTK_PRIVATE_DEF_CLS( MTKView );
 namespace MTK::Private::Selector
 {
 
-_MTK_PRIVATE_DEF_SEL( autoresizeDrawable,
-					 "autoresizeDrawable" );
+_MTK_PRIVATE_DEF_SEL( autoResizeDrawable,
+					 "autoResizeDrawable" );
 
 _MTK_PRIVATE_DEF_SEL( clearColor,
 					 "clearColor" );
@@ -130,6 +131,9 @@ _MTK_PRIVATE_DEF_SEL( framebufferOnly,
 _MTK_PRIVATE_DEF_SEL( initWithCoder_,
 					 "initWithCoder:" );
 
+_MTK_PRIVATE_DEF_SEL( initWithDevice_,
+					 "initWithDevice:" );
+
 _MTK_PRIVATE_DEF_SEL( initWithFrame_device_,
 					 "initWithFrame:device:" );
 
@@ -138,6 +142,9 @@ _MTK_PRIVATE_DEF_SEL( multisampleColorAttachmentTextureUsage,
 
 _MTK_PRIVATE_DEF_SEL( multisampleColorTexture,
 					 "multisampleColorTexture" );
+
+_MTK_PRIVATE_DEF_SEL( newTextureWithContentsOfURL_options_error_,
+					 "newTextureWithContentsOfURL:options:error:" );
 
 _MTK_PRIVATE_DEF_SEL( isPaused,
 					 "isPaused" );
@@ -157,8 +164,8 @@ _MTK_PRIVATE_DEF_SEL( presentsWithTransaction,
 _MTK_PRIVATE_DEF_SEL( sampleCount,
 					 "sampleCount" );
 
-_MTK_PRIVATE_DEF_SEL( setAutoresizeDrawable_,
-					 "setAutoresizeDrawable:" );
+_MTK_PRIVATE_DEF_SEL( setAutoResizeDrawable_,
+					 "setAutoResizeDrawable:" );
 
 _MTK_PRIVATE_DEF_SEL( setClearColor_,
 					 "setClearColor:" );

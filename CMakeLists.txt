@@ -4,8 +4,6 @@ project(Graphics)
 
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_subdirectory(cmake-metal)
-
 set(SOURCES
     src/main.cpp
     src/Renderer.cpp
@@ -13,10 +11,19 @@ set(SOURCES
     src/MTKViewDelegate.cpp)
 
 add_executable(Graphics ${SOURCES})
-target_link_libraries(Graphics Metal-cpp)
 
 set(DIRS
     ${PROJECT_SOURCE_DIR}/include
-    ${PROJECT_SOURCE_DIR}/shaders)
+    ${PROJECT_SOURCE_DIR}/shaders
+    ${PROJECT_SOURCE_DIR}/dependencies/metal-cpp
+    ${PROJECT_SOURCE_DIR}/dependencies/metal-cpp-extensions)
 
 target_include_directories(Graphics PRIVATE ${DIRS})
+
+target_link_libraries(Graphics
+  "-framework Metal"
+  "-framework Foundation"
+  "-framework QuartzCore"
+  "-framework MetalKit"
+  "-framework AppKit"
+  )
