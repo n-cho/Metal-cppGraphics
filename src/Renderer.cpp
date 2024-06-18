@@ -84,7 +84,7 @@ void Renderer::buildBuffers() {
         {+0.8f, +0.8f, 0.0f}, {-0.8f, +0.8f, 0.0f}, {-0.8f, -0.8f, 0.0f}, {+0.8f, -0.8f, 0.0f}};
 
     simd::float4 colors[NumVertices] = {
-        {1.0f, 0.0f, 0.0f}, {0.0f, 1.0f, 0.0f}, {0.0f, 0.0f, 1.0f}, {1.0f, 1.0f, 0.0f}};
+        {0.0f, 0.0f, 1.0f}, {1.0f, 0.0f, 0.0f}, {0.0f, 1.0f, 0.0f}, {0.0f, 0.0f, 1.0f}};
 
     simd::ushort1 indices[NumVertices + 2] = {0, 1, 2, 2, 3, 0};
 
@@ -122,8 +122,8 @@ void Renderer::draw(MTK::View* pView) {
     pEnc->setRenderPipelineState(_pPSO);
     pEnc->setVertexBuffer(_pVertexPositionsBuffer, 0, 0);
     pEnc->setVertexBuffer(_pVertexColorsBuffer, 0, 1);
-    // pEnc->drawPrimitives(MTL::PrimitiveType::PrimitiveTypeTriangle,
-    // NS::UInteger(0), NS::UInteger(3));
+    // pEnc->drawPrimitives(MTL::PrimitiveType::PrimitiveTypeTriangle, NS::UInteger(0),
+    //                      NS::UInteger(3));
     pEnc->drawIndexedPrimitives(MTL::PrimitiveType::PrimitiveTypeTriangle, NS::UInteger(6),
                                 MTL::IndexType::IndexTypeUInt16, _pVertexIndicesBuffer,
                                 NS::UInteger(0), NS::UInteger(6));
