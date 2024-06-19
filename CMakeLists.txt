@@ -15,6 +15,7 @@ add_executable(Graphics ${SOURCES})
 set(DIRS
     ${PROJECT_SOURCE_DIR}/include
     ${PROJECT_SOURCE_DIR}/shaders
+    ${PROJECT_SOURCE_DIR}/assets
     ${PROJECT_SOURCE_DIR}/dependencies/metal-cpp
     ${PROJECT_SOURCE_DIR}/dependencies/metal-cpp-extensions)
 

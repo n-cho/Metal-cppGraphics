@@ -1,21 +1,25 @@
 #include <metal_stdlib>
 using namespace metal;
 
-struct vertex_payload {
-    float4 position [[position]];
-    half3 color;
+struct vertexOut {
+    float4 pos [[position]];
+    float2 textureCoord;
 };
 
-vertex_payload vertex vertexMain(
+vertexOut vertex vertexMain(
         uint vertexId [[vertex_id]],
-        device const float3* positions [[buffer(0)]],
-        device const float3* colors [[buffer(1)]]) {
-    vertex_payload payload;
-    payload.position = float4(positions[vertexId], 1.0);
-    payload.color = half3(colors[vertexId]);
-    return payload;
+        device const float4* positions [[buffer(0)]],
+        device const float2* textureCoordinates [[buffer(1)]]) {
+    vertexOut out;
+
+    out.pos = positions[vertexId];
+    out.textureCoord = textureCoordinates[vertexId];
+    return out;
 }
 
-half4 fragment fragmentMain(vertex_payload in [[stage_in]]) {
-    return half4(in.color, 1.0);
+float4 fragment fragmentMain(vertexOut in [[stage_in]], texture2d<float> colorTexture [[texture(0)]]) {
+    constexpr sampler textureSampler (mag_filter::linear, min_filter::linear);
+
+    const float4 colorSample = colorTexture.sample(textureSampler, in.textureCoord);
+    return colorSample;
 }

@@ -34,41 +34,44 @@
 namespace MTK
 {
 
-	class TextureLoader : public NS::Referencing< TextureLoader >
-	{
-		public:
-			static TextureLoader*		alloc();
-			TextureLoader*				init( const MTL::Device* pDevice );
+class TextureLoader : public NS::Referencing<TextureLoader>
+{
+    public:
+        static TextureLoader *alloc();
+        TextureLoader *init(const MTL::Device *pDevice);
 
-			void						setDevice( const MTL::Device* pDevice );
-			MTL::Device*				device() const;
+        void setDevice(const MTL::Device *pDevice);
+        MTL::Device *device() const;
 
-			MTL::Texture*				newTexture( const NS::URL* URL, const NS::Dictionary* options, NS::Error** error );
+        MTL::Texture *newTexture(const NS::URL *URL, const NS::Dictionary *options, NS::Error **error);
 
-	};
+        typedef NS::String *TextureLoaderOption;
+};
+} // namespace MTK
+
+_NS_INLINE MTK::TextureLoader *MTK::TextureLoader::alloc()
+{
+    return NS::Object::alloc<TextureLoader>(_MTK_PRIVATE_CLS(MTKTextureLoader));
 }
 
-_NS_INLINE MTK::TextureLoader* MTK::TextureLoader::alloc()
+_NS_INLINE MTK::TextureLoader *MTK::TextureLoader::init(const MTL::Device *pDevice)
 {
-	return NS::Object::alloc< TextureLoader >( _MTK_PRIVATE_CLS( MTKTextureLoader ) );
+    return NS::Object::sendMessage<TextureLoader *>(this, _MTK_PRIVATE_SEL(initWithDevice_), pDevice);
 }
 
-_NS_INLINE MTK::TextureLoader* MTK::TextureLoader::init( const MTL::Device* pDevice )
+_NS_INLINE void MTK::TextureLoader::setDevice(const MTL::Device *pDevice)
 {
-	return NS::Object::sendMessage< TextureLoader* >( this, _MTK_PRIVATE_SEL( initWithDevice_ ), pDevice );
+    NS::Object::sendMessage<void>(this, _MTK_PRIVATE_SEL(setDevice_), pDevice);
 }
 
-_NS_INLINE void MTK::TextureLoader::setDevice( const MTL::Device* pDevice )
+_NS_INLINE MTL::Device *MTK::TextureLoader::device() const
 {
-	NS::Object::sendMessage< void >( this, _MTK_PRIVATE_SEL( setDevice_ ), pDevice );
+    return NS::Object::sendMessage<MTL::Device *>(this, _MTK_PRIVATE_SEL(device));
 }
 
-_NS_INLINE MTL::Device* MTK::TextureLoader::device() const
+_NS_INLINE MTL::Texture *MTK::TextureLoader::newTexture(const NS::URL *URL, const NS::Dictionary *options,
+                                                        NS::Error **error)
 {
-	return NS::Object::sendMessage< MTL::Device* >( this, _MTK_PRIVATE_SEL( device ) );
-}
-
-_NS_INLINE MTL::Texture* MTK::TextureLoader::newTexture( const NS::URL* URL, const NS::Dictionary* options, NS::Error** error )
-{
-	return NS::Object::sendMessage< MTL::Texture* >( this, _MTK_PRIVATE_SEL( newTextureWithContentsOfURL_options_error_ ), URL, options, error );
+    return NS::Object::sendMessage<MTL::Texture *>(this, _MTK_PRIVATE_SEL(newTextureWithContentsOfURL_options_error_),
+                                                   URL, options, error);
 }

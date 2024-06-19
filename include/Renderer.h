@@ -11,21 +11,22 @@
 #include <sstream>
 
 class Renderer {
-    public:
-        Renderer(MTL::Device* pDevice);
-        ~Renderer();
+  public:
+    Renderer(MTL::Device *pDevice);
+    ~Renderer();
 
-        void buildShader(const char* filePath, const char* vertexFunctionName,
-                         const char* fragmentFunctionName);
-        void buildShaders();
-        void buildBuffers();
-        void draw(MTK::View* pView);
+    void buildShaders();
+    void buildTextures();
+    void buildBuffers();
+    void draw(MTK::View *pView);
 
-    private:
-        MTL::Device* _pDevice;
-        MTL::CommandQueue* _pCommandQueue;
-        MTL::RenderPipelineState* _pPSO;    // PSO -> PipelineStateObject
-        MTL::Buffer* _pVertexPositionsBuffer;
-        MTL::Buffer* _pVertexColorsBuffer;
-        MTL::Buffer* _pVertexIndicesBuffer;
+  private:
+    MTL::Device *_pDevice;
+    MTL::CommandQueue *_pCommandQueue;
+    MTL::Library *_pShaderLibrary;
+    MTL::RenderPipelineState *_pPSO; // PSO -> PipelineStateObject
+    MTL::Texture *_pTexture;
+    MTL::Buffer *_pVertexPositionsBuffer;
+    MTL::Buffer *_pVertexTextureCoordinatesBuffer;
+    MTL::Buffer *_pVertexIndicesBuffer;
 };
