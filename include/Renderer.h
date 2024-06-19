@@ -15,6 +15,8 @@ class Renderer {
         Renderer(MTL::Device* pDevice);
         ~Renderer();
 
+        void buildShader(const char* filePath, const char* vertexFunctionName,
+                         const char* fragmentFunctionName);
         void buildShaders();
         void buildBuffers();
         void draw(MTK::View* pView);

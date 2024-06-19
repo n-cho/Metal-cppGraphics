@@ -4,7 +4,10 @@
 
 #include <cstring>
 
+#include "Foundation/NSError.hpp"
+#include "Foundation/NSString.hpp"
 #include "Foundation/NSTypes.hpp"
+#include "Metal/MTLLibrary.hpp"
 #include "Metal/MTLResource.hpp"
 #include "Metal/MTLStageInputOutputDescriptor.hpp"
 
@@ -23,30 +26,28 @@ Renderer::~Renderer() {
     _pDevice->release();
 }
 
-const char* readFileToBuffer(const char* filePath) {
+void Renderer::buildShaders() {
+    using NS::StringEncoding::UTF8StringEncoding;
+
+    // Store error information.
+    NS::Error* pError = nullptr;
+
+    // Read shader code from file.
     std::ifstream file;
-    file.open(filePath);
+    file.open("shaders/square.metal");
 
     file.seekg(0, std::ios::end);
     std::size_t length = file.tellg();
     file.seekg(0, std::ios::beg);
 
-    char* buffer = new char[length + 1];
+    char* shaderCode = new char[length + 1];
 
-    file.read(buffer, length);
-    buffer[length] = '\0';
+    file.read(shaderCode, length);
+    shaderCode[length] = '\0';
 
-    return buffer;
-}
-
-void Renderer::buildShaders() {
-    using NS::StringEncoding::UTF8StringEncoding;
-    const char* shaderSource = readFileToBuffer("shaders/triangle.metal");
-
-    NS::Error* pError = nullptr;
-
-    MTL::Library* pLibrary = _pDevice->newLibrary(
-        NS::String::string(shaderSource, UTF8StringEncoding), nullptr, &pError);
+    // Store shader functions in MTL::Library.
+    MTL::Library* pLibrary =
+        _pDevice->newLibrary(NS::String::string(shaderCode, UTF8StringEncoding), nullptr, &pError);
     if (!pLibrary) {
         std::cerr << pError->localizedDescription()->utf8String();
         assert(false);
@@ -57,34 +58,40 @@ void Renderer::buildShaders() {
     MTL::Function* pFragmentFunction =
         pLibrary->newFunction(NS::String::string("fragmentMain", UTF8StringEncoding));
 
+    // Store MTL::RenderPipelineState arguments in MTL::RenderPipelineDescriptor.
     MTL::RenderPipelineDescriptor* pDesc = MTL::RenderPipelineDescriptor::alloc()->init();
     pDesc->setVertexFunction(pVertexFunction);
     pDesc->setFragmentFunction(pFragmentFunction);
     pDesc->colorAttachments()->object(0)->setPixelFormat(
         MTL::PixelFormat::PixelFormatBGRA8Unorm_sRGB);
 
+    // Generate new MTL::RenderPipelineState.
     _pPSO = _pDevice->newRenderPipelineState(pDesc, &pError);
     if (!_pPSO) {
         std::cerr << pError->localizedDescription()->utf8String();
         assert(false);
     }
 
+    delete[] shaderCode;
+
     pVertexFunction->release();
     pFragmentFunction->release();
     pDesc->release();
     pLibrary->release();
-
-    delete shaderSource;
 }
 
 void Renderer::buildBuffers() {
     const size_t NumVertices = 4;
 
-    simd::float4 positions[NumVertices] = {
-        {+0.8f, +0.8f, 0.0f}, {-0.8f, +0.8f, 0.0f}, {-0.8f, -0.8f, 0.0f}, {+0.8f, -0.8f, 0.0f}};
+    simd::float4 positions[NumVertices] = {{+0.8f, +0.8f, 0.0f, 1.0f},
+                                           {-0.8f, +0.8f, 0.0f, 1.0f},
+                                           {-0.8f, -0.8f, 0.0f, 1.0f},
+                                           {+0.8f, -0.8f, 0.0f, 1.0f}};
 
-    simd::float4 colors[NumVertices] = {
-        {0.0f, 0.0f, 1.0f}, {1.0f, 0.0f, 0.0f}, {0.0f, 1.0f, 0.0f}, {0.0f, 0.0f, 1.0f}};
+    simd::float4 colors[NumVertices] = {{0.0f, 0.0f, 1.0f, 1.0f},
+                                        {1.0f, 0.0f, 0.0f, 1.0f},
+                                        {0.0f, 1.0f, 0.0f, 1.0f},
+                                        {0.0f, 0.0f, 1.0f, 1.0f}};
 
     simd::ushort1 indices[NumVertices + 2] = {0, 1, 2, 2, 3, 0};
 
